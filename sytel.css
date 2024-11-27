@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "CostomFont";
+    src:
+      url("/Roboto/Roboto-Regular.ttf");
+}
+
+body{
+    background-color:cornflowerblue;
+    font-family: "CostomFont", sans-serif;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 83rem;
+    padding: 1rem;
+    background: rgba(0,0,0,0.3);
+}
+
+header .nav-content {
+    display: flex;
+    height: 100%;
+    min-width: 120px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    color: white; 
+}
+
+header .nav-content ul {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-content ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .nav-content ul li a {
+    font-size: 18px;
+    font-weight: 500px;
+    color: white;
+    padding: 10px 4px;
+}
+
+header .nav-content ul li a:hover {
+    color: #4070f4;
+}
+
+header .menu-toggle {
+    color: rgb(94, 94, 94);
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+.Beranda {
+    text-align: center;
+    color: white;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: yellowgreen;
+    background-position: top center;
+    background-size: cover;
+}
+
+.About {
+    text-align: center;
+    color: white;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    background-color: black;
+    background-position: top center;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0.1px;
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    flex-wrap: wrap;
+}
+
+.Produk {
+    background: white;
+    width: 20rem;
+    height: 39rem;
+    margin: 3rem;
+    border-radius: 15px ;
+}
+
+.Produk-img {
+    height: 150px;
+    margin-bottom:  15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0; 
+}
+
+.Produk p {
+    padding: 10px;
+}
+
+.Produk:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all is ease;
+}
+
+form {
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color:greenyellow;
+}
+
+fieldset{
+    width: 400px;
+    padding: 15px;
+    margin: 20px;
+}
+
+button {
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*responsive*/
+
+@media only screen and  (max-widht: 736px)
+and (orientation: portrait)
+{
+
+    header {
+        padding: 0 20px;
+    }
+    
+    header .nav-content {
+        align-items: center;
+    }
+    
+    header .logo{
+        width: 30%;
+        position: absolute;
+        left: 0px;
+        padding-top: 20px;
+    }
+    
+    header .nav-content ul {
+        position: fixed;
+        top: 44px;
+        width: 100%;
+        background:rgba(0,0,0,0.3);
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+    header .nav-content ul li {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    header .nav-content ul li a {
+        width: 100px;
+        display: block;
+    }
+    
+    header .nav-content ul li a:hover {
+        color: #4070f4;
+    }
+    
+    header .menu-toggle {
+        display: block;
+    }
+}   
